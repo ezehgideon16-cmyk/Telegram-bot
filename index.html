@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amax | Leo Gizmo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    function shareSite() {
-      const url = window.location.href;
-      if (navigator.share) {
-        navigator.share({
-          title: "Amax | Leo Gizmo",
-          url,
-        });
-      } else {
-        navigator.clipboard.writeText(url);
-        alert("Link copied to clipboard!");
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amax AI Agency</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
     }
-  </script>
+    header {
+      background: #e63946;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin: 10px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f1faee;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section h2 {
+      color: #e63946;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background: #e63946;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #f1faee;
+      color: #e63946;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body>
+  <header>
+    <h1>Amax AI Agency</h1>
+    <p>AI Automation & Digital Solutions</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#socials">Socials</a>
+    </nav>
+  </header>
 
-  <!-- Hero -->
-  <section class="text-center py-16 px-6">
-    <h1 class="text-5xl font-bold mb-4">Amax</h1>
-    <p class="text-xl mb-2">by <span class="text-indigo-400 font-semibold">Leo Gizmo</span></p>
-    <p class="text-lg text-gray-300">Multiskilled Creative | Tech & Design Expert</p>
-    <a href="https://t.me/amax_ai_bot" target="_blank" class="mt-6 inline-block bg-indigo-600 px-6 py-3 rounded-lg text-white font-semibold hover:bg-indigo-500">
-      🚀 Try Amax AI Bot
-    </a>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We provide AI-powered solutions, automation tools, and chatbots to scale your business fast 🚀.</p>
   </section>
 
-  <!-- About -->
-  <section class="px-6 py-10 max-w-3xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-    <p class="text-gray-400">
-      I'm Leo Gizmo — a passionate and versatile professional specializing in Graphic Design, Software Development,
-      Bug Fixing, Data Analytics, AI Art, and UI/UX Design. I love transforming ideas into polished digital experiences.
-    </p>
+  <section id="socials">
+    <h2>Connect With Us</h2>
+    <a class="btn" href="https://whatsapp.com/channel/0029VbB5QRxD38COKCRYk72y" target="_blank">📲 Join WhatsApp Channel</a>
+    <a class="btn" href="https://www.youtube.com/@EzehGideon-cm3gg" target="_blank">▶️ Visit YouTube Page</a>
+    <a class="btn" href="https://t.me/amax_ai_bot" target="_blank">🤖 Try Our Telegram Bot</a>
   </section>
 
-  <!-- AI Automation Agency -->
-  <section class="px-6 py-12 bg-gray-800">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4 text-indigo-400">AI Automation Agency</h2>
-      <p class="text-gray-300 mb-8">At Amax Studios, we build powerful automation solutions to help businesses grow faster.</p>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-2">Starter</h3>
-          <p class="text-gray-300">Basic Chatbot setup, simple automations</p>
-          <p class="text-indigo-400 font-bold mt-2">$50 / ₦75,000</p>
-        </div>
-
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-2">Pro</h3>
-          <p class="text-gray-300">Advanced Bot + Workflow Automation + Analytics</p>
-          <p class="text-indigo-400 font-bold mt-2">$150 / ₦225,000</p>
-        </div>
-
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
-          <p class="text-gray-300">Full AI Automation Suite, Custom Integrations, 24/7 Support</p>
-          <p class="text-indigo-400 font-bold mt-2">$500+ / ₦750,000+</p>
-        </div>
-      </div>
-    </div>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:leogizmo.ai@gmail.com">leogizmo.ai@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/2348033486390" target="_blank">+234 803 348 6390</a></p>
   </section>
 
-  <!-- Contact -->
-  <section class="px-6 py-12 max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
-    <p class="text-gray-400 mb-6">Let’s work together. Reach me on:</p>
-    <p class="mb-2">📧 <a href="mailto:leogizmo.ai@gmail.com" class="text-indigo-400">leogizmo.ai@gmail.com</a></p>
-    <p class="mb-2">📱 <a href="https://wa.me/2348033486390" class="text-indigo-400">WhatsApp: 08033486390</a></p>
-    <p class="mb-2">📢 <a href="https://whatsapp.com/channel/0029VbB5QRxD38COKCRYk72y" class="text-indigo-400">WhatsApp Channel</a></p>
-    <p class="mb-2">📷 <a href="https://www.instagram.com/YOUR_IG_HANDLE" class="text-indigo-400">Instagram</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 py-6 text-center text-gray-400">
-    <p>© 2025 Amax Studios | Built by Leo Gizmo</p>
-    <button onclick="shareSite()" class="mt-2 text-indigo-400 underline">Share this site</button>
+  <footer>
+    <p>© 2025 Amax AI Agency | Built by Leo Gizmo</p>
   </footer>
 </body>
 </html>
