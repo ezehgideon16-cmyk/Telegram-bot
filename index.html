@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amax | Leo Gizmo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function shareSite() {
+      const url = window.location.href;
+      if (navigator.share) {
+        navigator.share({
+          title: "Amax | Leo Gizmo",
+          url,
+        });
+      } else {
+        navigator.clipboard.writeText(url);
+        alert("Link copied to clipboard!");
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Hero -->
+  <section class="text-center py-16 px-6">
+    <h1 class="text-5xl font-bold mb-4">Amax</h1>
+    <p class="text-xl mb-2">by <span class="text-indigo-400 font-semibold">Leo Gizmo</span></p>
+    <p class="text-lg text-gray-300">Multiskilled Creative | Tech & Design Expert</p>
+    <a href="https://t.me/amax_ai_bot" target="_blank" class="mt-6 inline-block bg-indigo-600 px-6 py-3 rounded-lg text-white font-semibold hover:bg-indigo-500">
+      🚀 Try Amax AI Bot
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="px-6 py-10 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-400">
+      I'm Leo Gizmo — a passionate and versatile professional specializing in Graphic Design, Software Development,
+      Bug Fixing, Data Analytics, AI Art, and UI/UX Design. I love transforming ideas into polished digital experiences.
+    </p>
+  </section>
+
+  <!-- AI Automation Agency -->
+  <section class="px-6 py-12 bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-indigo-400">AI Automation Agency</h2>
+      <p class="text-gray-300 mb-8">At Amax Studios, we build powerful automation solutions to help businesses grow faster.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Starter</h3>
+          <p class="text-gray-300">Basic Chatbot setup, simple automations</p>
+          <p class="text-indigo-400 font-bold mt-2">$50 / ₦75,000</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Pro</h3>
+          <p class="text-gray-300">Advanced Bot + Workflow Automation + Analytics</p>
+          <p class="text-indigo-400 font-bold mt-2">$150 / ₦225,000</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+          <p class="text-gray-300">Full AI Automation Suite, Custom Integrations, 24/7 Support</p>
+          <p class="text-indigo-400 font-bold mt-2">$500+ / ₦750,000+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="px-6 py-12 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+    <p class="text-gray-400 mb-6">Let’s work together. Reach me on:</p>
+    <p class="mb-2">📧 <a href="mailto:leogizmo.ai@gmail.com" class="text-indigo-400">leogizmo.ai@gmail.com</a></p>
+    <p class="mb-2">📱 <a href="https://wa.me/2348033486390" class="text-indigo-400">WhatsApp: 08033486390</a></p>
+    <p class="mb-2">📢 <a href="https://whatsapp.com/channel/0029VbB5QRxD38COKCRYk72y" class="text-indigo-400">WhatsApp Channel</a></p>
+    <p class="mb-2">📷 <a href="https://www.instagram.com/YOUR_IG_HANDLE" class="text-indigo-400">Instagram</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400">
+    <p>© 2025 Amax Studios | Built by Leo Gizmo</p>
+    <button onclick="shareSite()" class="mt-2 text-indigo-400 underline">Share this site</button>
+  </footer>
+</body>
+</html>
